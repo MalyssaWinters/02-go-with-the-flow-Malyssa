@@ -20,15 +20,16 @@ namespace GoWithTheFlow2
                 if (answer.ToLower() == "yes")
                 {
                     Console.WriteLine("End");
-                    answer = Console.ReadLine();
+                    break;
+                    
                 }
                 else
                 {
                     Console.WriteLine("Get another cat");
                 }
-
-                Console.ReadKey();
+                              
             }
+            Console.ReadKey();
         }
 
     }
