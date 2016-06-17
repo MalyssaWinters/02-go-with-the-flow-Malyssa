@@ -10,27 +10,26 @@ namespace GoWithTheFlow2
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Flow Chart of a Cat Lady");
-            Console.WriteLine("Are you happy?");
-
-            string answer = Console.ReadLine();
-                        
-            if (answer.ToLower() == "yes")
+            while (true)
             {
-                Console.WriteLine("End");
-                answer = Console.ReadLine();
+                Console.WriteLine("Are you happy?");
 
+                string answer = Console.ReadLine();
+
+                if (answer.ToLower() == "yes")
+                {
+                    Console.WriteLine("End");
+                    answer = Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Get another cat");
+                }
+
+                Console.ReadKey();
             }
-
-            else
-            {
-                Console.WriteLine("Get another cat");
-
-            }
-            
-            Console.ReadKey();
-            
         }
+
     }
 }
